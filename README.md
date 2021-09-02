@@ -131,10 +131,6 @@ to confirm it was created.
 <img src="https://i.imgur.com/P0C0U5J.png" alt="hello zerotier" /><br/>
 </p>
 
-```
-laptop:~/terraform-quickstart$ terraform plan && terraform apply
-```
-
 # Bridging Networks
 
 The next example manipulates the `allow_ethernet_bridging` settings on
@@ -181,6 +177,17 @@ resource "zerotier_member" "router2" {
 }
 ```
 
+<p align="center">
+<img src="https://i.imgur.com/U0wwQtN.png" alt="queue the plan" /><br/>
+</p>
+
+After Terraform applies the plan, check out the ZeroTier Cental webui
+to confirm it was created.
+
+<p align="center">
+<img src="https://i.imgur.com/S61AHzN.png" alt="hello zerotier" /><br/>
+</p>
+
 # Network Segmentation
 
 The next example creates the networks, `red`, `green`, and
@@ -189,6 +196,17 @@ network, and the green team gets access to the `green` network. Red
 and green make `yellow`.
 
 Repeat the steps from "Hello World" with `groups.tf`
+
+<p align="center">
+<img src="https://i.imgur.com/Lf5AgFn.png" alt="queue the plan" /><br/>
+</p>
+
+After Terraform applies the plan, check out the ZeroTier Cental webui
+to confirm it was created.
+
+<p align="center">
+<img src="https://i.imgur.com/qT2Im1f.png" alt="hello zerotier" /><br/>
+</p>
 
 ```hcl
 variable "segments" {
