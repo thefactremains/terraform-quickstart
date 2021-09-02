@@ -118,8 +118,18 @@ resource "zerotier_member" "bob" {
 }
 ```
 
-Make it real by running Terraform from the command line. Check it out
-in the Central webUI when you are done.
+Queue a plan then "Confim and Apply".
+
+<p align="center">
+<img src="https://i.imgur.com/y3alCUp.png" alt="queue the plan" /><br/>
+</p>
+
+After Terraform applies the plan, check out the ZeroTier Cental webui
+to confirm it was created.
+
+<p align="center">
+<img src="https://i.imgur.com/P0C0U5J.png" alt="hello zerotier" /><br/>
+</p>
 
 ```
 laptop:~/terraform-quickstart$ terraform plan && terraform apply
