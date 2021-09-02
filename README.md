@@ -75,7 +75,7 @@ authenticate to the API. The variable must be named
 <img src="https://i.imgur.com/cZxQNdU.png" "Add Environmet Variables" /><br/>
 </p>
 
-## Hello World
+# Hello World
 
 This example is probably the simplest thing you can do with
 ZeroTier. It creates a single network, then joins two members. The
@@ -125,7 +125,7 @@ in the Central webUI when you are done.
 laptop:~/terraform-quickstart$ terraform plan && terraform apply
 ```
 
-## Bridging Networks
+# Bridging Networks
 
 The next example manipulates the `allow_ethernet_bridging` settings on
 the Member objects. When running on machines with multiple physical
@@ -171,7 +171,7 @@ resource "zerotier_member" "router2" {
 }
 ```
 
-## Network Segmentation
+# Network Segmentation
 
 The next example creates the networks, `red`, `green`, and
 `yellow`. We define two groups. The red team gets access to the `red`
@@ -304,17 +304,17 @@ resource "zerotier_member" "shape-letters" {
 }
 ```
 
-## Cleaning up
+# Cleaning up
 
 When you're done experimenting with ZeroTier and Terraform, tear
 everything down! Look under your workspace's settings menu for
 "Destruction and Deletion"
 
 <p align="center">
-<img src="https://i.imgur.com/pCm7ike.png" "Create workspace" /><br/>
+<img src="https://i.imgur.com/xsPldPr.png" "Create workspace" /><br/>
 </p>
 
-## That's all folks!
+# That's all folks!
 
 If you like this tutorial, check out the [ZeroTier Multicloud Terraform Quickstart](https://docs.zerotier.com/terraform/multicloud-quickstart) next!
 
