@@ -1,3 +1,6 @@
+#
+# Uncomment the lines below
+#
 
 # variable "letters" {
 #   default = ["alfa", "bravo", "charlie"]

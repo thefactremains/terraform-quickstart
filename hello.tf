@@ -1,3 +1,6 @@
+#
+# Uncomment the lines below
+#
 
 # resource "zerotier_network" "hello" {
 #   name        = "hello"
