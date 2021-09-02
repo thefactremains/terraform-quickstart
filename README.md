@@ -197,17 +197,6 @@ and green make `yellow`.
 
 Repeat the steps from "Hello World" with `groups.tf`
 
-<p align="center">
-<img src="https://i.imgur.com/Lf5AgFn.png" alt="queue the plan" /><br/>
-</p>
-
-After Terraform applies the plan, check out the ZeroTier Cental webui
-to confirm it was created.
-
-<p align="center">
-<img src="https://i.imgur.com/qT2Im1f.png" alt="hello zerotier" /><br/>
-</p>
-
 ```hcl
 variable "segments" {
   default = {
@@ -285,6 +274,17 @@ resource "zerotier_member" "yellow" {
   network_id = module.segments["yellow"].id
 }
 ```
+
+<p align="center">
+<img src="https://i.imgur.com/Lf5AgFn.png" alt="queue the plan" /><br/>
+</p>
+
+After Terraform applies the plan, check out the ZeroTier Cental webui
+to confirm it was created.
+
+<p align="center">
+<img src="https://i.imgur.com/qT2Im1f.png" alt="hello zerotier" /><br/>
+</p>
 
 # Many to Many
 
