@@ -25,9 +25,9 @@ you though how to get started.
 
 To follow along step by step, you will need:
 
-- A [Github](https://github.com) account,  
-- A [ZeroTier Central](https://my.zerotier.com) account,  
-- A [Terraform Cloud](https://app.terraform.io) account.  
+- A [Github](https://github.com) account,
+- A [ZeroTier Central](https://my.zerotier.com) account,
+- A [Terraform Cloud](https://app.terraform.io) account.
 
 It should take you about 10 minutes to through this turorial. It will
 be done *in browser* without touching the command line at all.
@@ -136,7 +136,7 @@ to confirm it was created.
 The next example manipulates the `allow_ethernet_bridging` settings on
 the Member objects. When running on machines with multiple physical
 ethernet interfaces, ZeroTier can be configured to pass layer2
-traffic such as  ARP, NDP, multicast, mDNS, etc. 
+traffic such as  ARP, NDP, multicast, mDNS, etc.
 
 To make this work, you'll need to go into your router's OS and
 configure a bridge between a physical interface and the ZeroTier
