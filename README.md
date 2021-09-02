@@ -332,15 +332,28 @@ resource "zerotier_member" "shape-letters" {
 }
 ```
 
-# Cleaning up
+<p align="center">
+<img src="https://i.imgur.com/lPGOwhs.png" alt="queue the plan" /><br/>
+</p>
 
-When you're done experimenting with ZeroTier and Terraform, tear
-everything down! Look under your workspace's settings menu for
-"Destruction and Deletion"
+After Terraform applies the plan, check out the ZeroTier Cental webui
+to confirm it was created.
 
 <p align="center">
-<img src="https://i.imgur.com/xsPldPr.png" "Create workspace" /><br/>
+<img src="https://i.imgur.com/l5vqsfz.png" alt="hello zerotier" /><br/>
 </p>
+
+# Cleaning up
+
+When you're done experimenting with ZeroTier and Terraform, clean up
+by deleting all the networks. Look under your workspace's settings
+menu for "Destruction and Deletion"
+
+<p align="center">
+<img src="https://i.imgur.com/gZuqacO.png" "Create workspace" /><br/>
+</p>
+
+Queue the destroy plan to tear everything down.
 
 # That's all folks!
 
