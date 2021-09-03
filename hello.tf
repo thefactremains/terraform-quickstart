@@ -2,6 +2,7 @@
 # Uncomment the lines below
 #
 
+
 resource "zerotier_network" "hello" {
   name        = "hello"
   description = "Hello World"
